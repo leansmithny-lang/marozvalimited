@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marozva Aluminium &amp; Projects — Built to fit. Made to last.</title>
+<meta name="description" content="Zimbabwean aluminium fabrication and installation company. Windows, doors, sliding and folding doors, burglar bars, glazing and custom aluminium work. Serving Harare, Chivhu, Hatcliff, Wedza, Nyika and Birchnough Bridge.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='7' fill='%230C4A78'/%3E%3Crect x='9' y='8' width='6' height='18' fill='%23F7F8F8'/%3E%3Crect x='9' y='8' width='18' height='6' fill='%23F7F8F8'/%3E%3Cline x1='9' y1='8' x2='15' y2='14' stroke='%230C4A78' stroke-width='1.6'/%3E%3C/svg%3E">
+<meta property="og:title" content="Marozva Aluminium &amp; Projects — Built to fit. Made to last.">
+<meta property="og:description" content="Zimbabwean aluminium fabrication and installation. Windows, doors, sliding &amp; folding doors, burglar bars, glazing and custom aluminium work.">
+<meta property="og:image" content="assets/images/wardrobe-closet.jpg">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Marozva Aluminium & Projects",
+  "alternateName": "Marozva Aluminium and Projects",
+  "image": "https://leansmithny-lang.github.io/marozvalimited/assets/images/house-tuscan-red-doors.jpg",
+  "url": "https://leansmithny-lang.github.io/marozvalimited/",
+  "telephone": "+263782616819",
+  "email": "muchengashepherd@gmail.com",
+  "description": "Aluminium fabrication, installation and construction company based in Zimbabwe, offering windows, doors, sliding and folding doors, burglar bars, glazing, custom aluminium work, and full construction and renovation services.",
+  "areaServed": ["Harare", "Chivhu", "Hatcliff", "Wedza", "Nyika", "Birchnough Bridge"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "ZW"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "07:00",
+    "closes": "18:00"
+  },
+  "priceRange": "$$"
+}
+</script>
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0C4A78;
+    --accent:#1C6FA8;
+    --silver:#A8ACB0;
+    --paper:#F7F8F8;
+    --charcoal:#2B2B2B;
+    --white:#FFFFFF;
+    --line: rgba(12,74,120,0.12);
+    --max: 1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--charcoal);
+    background:var(--white);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.brand-word{
+    font-family:'Archivo',sans-serif;
+    font-weight:700;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:var(--max);margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .logo-mark{width:30px;height:30px;background:var(--ink);border-radius:7px;position:relative;flex:none;}
+  .logo-mark svg{position:absolute;inset:0;}
+  .brand-word{font-size:15px;letter-spacing:0.04em;color:var(--ink);}
+  nav.links{display:flex;gap:32px;font-size:14px;font-weight:500;}
+  nav.links a{color:#5a5a5a;position:relative;padding-bottom:3px;transition:color .2s ease;}
+  nav.links a:hover{color:var(--ink);}
+  nav.links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--ink);transition:right .25s ease;}
+  nav.links a.active{color:var(--ink);}
+  nav.links a.active::after{right:0;}
+  .nav-cta{font-size:13px;font-weight:500;color:var(--ink);padding:9px 0;border-bottom:1px solid var(--ink);}
+  .menu-btn{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .menu-btn span{display:block;width:20px;height:1.5px;background:var(--ink);margin:5px 0;}
+  #mnav{display:none;flex-direction:column;padding:0 32px 20px;gap:16px;font-size:15px;}
+  #mnav.open{display:flex;}
+
+  section{padding:96px 0;}
+  #gallery{padding-top:36px;}
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  .reveal-stagger.is-visible > *{opacity:1;transform:translateY(0);}
+  .reveal-stagger > *{opacity:0;transform:translateY(14px);transition:opacity .5s ease, transform .5s ease;}
+  .reveal-stagger.is-visible > *:nth-child(1){transition-delay:.02s;}
+  .reveal-stagger.is-visible > *:nth-child(2){transition-delay:.08s;}
+  .reveal-stagger.is-visible > *:nth-child(3){transition-delay:.14s;}
+  .reveal-stagger.is-visible > *:nth-child(4){transition-delay:.2s;}
+  .reveal-stagger.is-visible > *:nth-child(5){transition-delay:.26s;}
+  .reveal-stagger.is-visible > *:nth-child(6){transition-delay:.32s;}
+  .reveal-stagger.is-visible > *:nth-child(7){transition-delay:.38s;}
+  .reveal-stagger.is-visible > *:nth-child(8){transition-delay:.44s;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal,.reveal-stagger>*{opacity:1;transform:none;transition:none;}
+  }
+  .eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px;}
+  .section-head{max-width:520px;margin-bottom:52px;}
+  .section-head h2{font-size:clamp(26px,3.2vw,34px);line-height:1.2;}
+  .section-head p{margin-top:14px;font-size:16px;color:#666;}
+
+  .hero{padding:110px 0 32px;position:relative;overflow:hidden;}
+  .hero-blob{position:absolute;top:-180px;right:-160px;width:520px;height:520px;border-radius:50%;background:linear-gradient(135deg,var(--ink),var(--accent));opacity:0.08;filter:blur(10px);}
+  .hero-inner{position:relative;max-width:640px;}
+  .hero h1{font-size:clamp(38px,6vw,64px);line-height:1.06;}
+  .hero p.sub{margin-top:22px;font-size:18px;color:#585858;max-width:44ch;}
+  .hero-ctas{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap;}
+  .btn{padding:14px 26px;font-size:14px;font-weight:500;border-radius:6px;display:inline-flex;align-items:center;gap:8px;}
+  .btn-primary{background:var(--ink);color:var(--white);}
+  .btn-primary:hover{background:var(--accent);}
+  .btn-outline{border:1px solid var(--line);color:var(--ink);}
+  .btn-outline:hover{border-color:var(--ink);}
+
+  #portals{padding-top:0;padding-bottom:96px;}
+  .portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .portal{position:relative;border-radius:14px;padding:40px 34px;color:var(--white);overflow:hidden;min-height:200px;display:flex;flex-direction:column;justify-content:space-between;}
+  .portal.p1{background:linear-gradient(135deg,var(--ink) 0%,var(--accent) 100%);}
+  .portal.p2{background:linear-gradient(135deg,var(--accent) 0%,#3f8fc4 100%);}
+  .portal .p-tag{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;}
+  .portal h3{font-size:26px;margin-top:8px;}
+  .portal p{font-size:14px;margin-top:10px;color:rgba(255,255,255,0.85);max-width:32ch;}
+  .portal .p-arrow{align-self:flex-end;font-size:22px;transition:transform .2s ease;}
+  .portal:hover .p-arrow{transform:translateX(4px);}
+
+  #about{background:var(--paper);}
+  .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:start;}
+  .about-copy p{font-size:16px;color:#3f3f3f;max-width:54ch;}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .stat .num{font-size:28px;font-weight:700;font-family:'Archivo',sans-serif;color:var(--ink);}
+  .stat .label{font-size:13px;color:#777;margin-top:4px;}
+
+  .plain-list .item-row{display:flex;justify-content:space-between;align-items:center;padding:17px 0;border-bottom:1px solid var(--line);font-size:16px;cursor:pointer;transition:padding-left .2s ease,color .2s ease;}
+  .plain-list .item-row:hover{padding-left:8px;color:var(--ink);}
+  .plain-list .item-row .right{display:flex;align-items:center;gap:10px;}
+  .plain-list .item-row span.n{color:var(--silver);font-size:12px;}
+  .plain-list .item-row .arrow{opacity:0;transition:opacity .2s ease;color:var(--accent);font-size:12.5px;font-weight:500;white-space:nowrap;}
+  .plain-list .item-row:hover .arrow{opacity:1;}
+
+  #service-modal{
+    position:fixed;inset:0;background:rgba(10,14,18,0.58);z-index:210;
+    display:none;align-items:center;justify-content:center;padding:24px;
+    opacity:0;transition:opacity .25s ease;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  }
+  #service-modal.open{display:flex;opacity:1;}
+  .sm-card{
+    background:#fff;border-radius:20px;max-width:720px;width:100%;max-height:86vh;
+    overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(8,20,32,0.35);
+    transform:scale(.96) translateY(6px);opacity:0;transition:transform .25s ease,opacity .25s ease;
+  }
+  #service-modal.open .sm-card{transform:scale(1) translateY(0);opacity:1;}
+  .sm-topbar{height:6px;background:linear-gradient(120deg,var(--ink),var(--accent));}
+  .sm-body{padding:32px 36px 30px;overflow-y:auto;max-height:calc(86vh - 6px);}
+  .sm-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;}
+  .sm-mark{width:38px;height:38px;flex:none;background:var(--ink);border-radius:9px;position:relative;}
+  .sm-mark svg{position:absolute;inset:0;}
+  .sm-close{
+    position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;
+    background:rgba(255,255,255,0.9);border:none;cursor:pointer;font-size:15px;color:var(--charcoal);
+    display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease;z-index:2;
+  }
+  .sm-close:hover{background:var(--ink);color:#fff;}
+  .sm-eyebrow{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);font-weight:600;}
+  .sm-count{font-size:12px;color:#8a8a8a;margin-top:2px;}
+  .sm-card h3{font-size:25px;color:var(--ink);margin:14px 0 6px;}
+  .sm-desc{font-size:14.5px;color:#666;margin:0 0 18px;max-width:52ch;}
+  .sm-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+  .sm-grid .sm-thumb{border-radius:12px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 6px 18px rgba(12,74,120,0.12);}
+  .sm-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease;}
+  .sm-grid .sm-thumb:hover img{transform:scale(1.06);}
+  .sm-empty{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:6px 0 4px;}
+  .sm-empty-icon{width:44px;height:44px;border-radius:10px;background:var(--paper);display:flex;align-items:center;justify-content:center;color:var(--accent);}
+  .sm-empty p{font-size:14.5px;color:#666;margin:0;max-width:46ch;}
+  .sm-cta{
+    margin-top:22px;display:inline-flex;align-items:center;gap:8px;
+    background:var(--ink);color:#fff;padding:12px 22px;border-radius:8px;font-size:14px;font-weight:500;
+  }
+  .sm-cta:hover{background:var(--accent);}
+  .sm-cta svg{width:16px;height:16px;}
+  #services{background:var(--paper);}
+
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .gal-item{border-radius:10px;overflow:hidden;aspect-ratio:4/5;background:var(--paper);cursor:pointer;}
+  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+  .gal-item:hover img{transform:scale(1.05);}
+
+  #lightbox{
+    position:fixed;inset:0;background:rgba(20,24,28,0.92);z-index:200;
+    display:none;align-items:center;justify-content:center;padding:40px;
+    opacity:0;transition:opacity .25s ease;
+  }
+  #lightbox.open{display:flex;opacity:1;}
+  #lightbox img{max-width:min(900px,92vw);max-height:86vh;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,0.4);}
+  #lightbox-close{
+    position:absolute;top:24px;right:28px;width:40px;height:40px;border-radius:50%;
+    background:rgba(255,255,255,0.12);color:#fff;border:none;font-size:20px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  #lightbox-close:hover{background:rgba(255,255,255,0.22);}
+
+  #wa-float{
+    position:fixed;right:22px;bottom:22px;z-index:60;
+    width:56px;height:56px;border-radius:50%;
+    background:linear-gradient(135deg,var(--ink),var(--accent));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px rgba(12,74,120,0.35);
+    transition:transform .2s ease;
+  }
+  #wa-float:hover{transform:scale(1.06);}
+  #wa-float svg{width:26px;height:26px;}
+  @media (max-width:860px){#wa-float{right:16px;bottom:16px;width:52px;height:52px;}}
+
+  #why{background:var(--paper);}
+  .why-list{display:grid;grid-template-columns:1fr 1fr;gap:0 60px;}
+  .why-item{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);}
+  .why-item .wn{font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;color:var(--accent);flex:none;width:26px;}
+  .why-item h3{font-size:15px;margin-bottom:4px;}
+  .why-item p{font-size:13.5px;color:#666;margin:0;}
+
+  .process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .process-step{border-top:2px solid var(--ink);padding-top:16px;}
+  .process-step .pn{font-family:'Archivo',sans-serif;font-weight:700;color:var(--accent);font-size:13px;}
+  .process-step h3{font-size:16px;margin:8px 0 6px;}
+  .process-step p{font-size:13.5px;color:#666;margin:0;}
+
+  .areas-row{display:flex;flex-wrap:wrap;gap:10px;}
+  .area-pill{border:1px solid var(--line);padding:9px 16px;font-size:14px;border-radius:20px;color:var(--ink);}
+
+  #contact{background:linear-gradient(135deg,var(--ink) 0%,var(--accent) 100%);color:var(--white);}
+  #contact .eyebrow{color:#bfe0f5;}
+  #contact .section-head p{color:rgba(255,255,255,0.8);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  .contact-block{padding-top:18px;margin-top:18px;border-top:1px solid rgba(255,255,255,0.22);}
+  .contact-block:first-child{margin-top:0;border-top:none;padding-top:0;}
+  .contact-block .k{font-size:12px;color:rgba(255,255,255,0.65);margin-bottom:5px;}
+  .contact-block .v{font-size:17px;font-weight:500;}
+  .contact-ctas{display:flex;flex-direction:column;gap:12px;}
+  .contact-ctas .btn{justify-content:center;width:100%;}
+  .contact-ctas .btn-primary{background:var(--white);color:var(--ink);}
+  .contact-ctas .btn-primary:hover{background:var(--paper);}
+  .contact-ctas .btn-outline{border-color:rgba(255,255,255,0.4);color:var(--white);}
+  .quote-form{margin-top:56px;padding-top:40px;border-top:1px solid rgba(255,255,255,0.2);max-width:640px;}
+  .quote-form .k{font-size:12px;color:rgba(255,255,255,0.65);margin-bottom:14px;letter-spacing:0.1em;text-transform:uppercase;}
+  .qf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+  .quote-form input,.quote-form textarea{
+    width:100%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.28);
+    border-radius:6px;padding:12px 14px;color:#fff;font-size:14px;font-family:'Inter',sans-serif;
+  }
+  .quote-form input::placeholder,.quote-form textarea::placeholder{color:rgba(255,255,255,0.5);}
+  .quote-form textarea{margin-bottom:16px;resize:vertical;min-height:90px;}
+  .quote-form button{width:100%;border:none;cursor:pointer;font-family:inherit;background:var(--white);color:var(--ink);}
+  .quote-form button:hover{background:var(--paper);}
+  @media (max-width:860px){.qf-row{grid-template-columns:1fr;}}
+
+  footer{padding:30px 0;font-size:13px;color:#8a8a8a;border-top:1px solid var(--line);}
+  .foot-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+  .foot-brand{display:flex;align-items:center;gap:9px;color:var(--ink);font-family:'Archivo',sans-serif;font-weight:600;font-size:13px;}
+  .foot-icons{display:flex;align-items:center;gap:14px;}
+  .foot-icons a{width:34px;height:34px;border-radius:50%;background:var(--paper);color:var(--ink);display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease;}
+  .foot-icons a:hover{background:var(--ink);color:#fff;}
+  .foot-icons svg{width:16px;height:16px;}
+
+  @media (max-width: 860px){
+    nav.links{display:none;}
+    .nav-cta{display:none;}
+    .menu-btn{display:block;}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:36px;}
+    .portal-grid{grid-template-columns:1fr;}
+    .why-list{grid-template-columns:1fr;}
+    .process-row{grid-template-columns:1fr 1fr;}
+    .gal-grid{grid-template-columns:repeat(2,1fr);}
+    .hero-blob{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="brand">
+      <span class="logo-mark">
+        <svg viewBox="0 0 34 34"><rect x="9" y="8" width="6" height="18" fill="#F7F8F8"/><rect x="9" y="8" width="18" height="6" fill="#F7F8F8"/><line x1="9" y1="8" x2="15" y2="14" stroke="#0C4A78" stroke-width="1.6"/></svg>
+      </span>
+      <span class="brand-word">MAROZVA</span>
+    </a>
+    <nav class="links">
+      <a href="#gallery">Projects</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/263782616819" target="_blank" rel="noopener">WhatsApp us</a>
+    <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('mnav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="mnav">
+    <a href="#gallery" onclick="document.getElementById('mnav').classList.remove('open')">Projects</a>
+    <a href="#about" onclick="document.getElementById('mnav').classList.remove('open')">About</a>
+    <a href="#products" onclick="document.getElementById('mnav').classList.remove('open')">Products</a>
+    <a href="#services" onclick="document.getElementById('mnav').classList.remove('open')">Services</a>
+    <a href="#contact" onclick="document.getElementById('mnav').classList.remove('open')">Contact</a>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<section class="hero">
+  <div class="hero-blob"></div>
+  <div class="wrap">
+    <div class="hero-inner reveal is-visible">
+      <div class="eyebrow">Aluminium fabrication &amp; installation · Zimbabwe</div>
+      <h1>Built to fit.<br>Made to last.</h1>
+      <p class="sub">Marozva Aluminium &amp; Projects manufactures, fabricates and installs windows, doors and custom aluminium work — with the finish and follow-through that keeps customers coming back.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/263782616819" target="_blank" rel="noopener">Request a quote on WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+263782616819">Call 0782 616 819</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Recent work</div>
+      <h2>A few completed installations</h2>
+      <p>Aluminium work and construction projects — a small selection for now, more is being added as we photograph it properly.</p>
+    </div>
+    <div class="gal-grid reveal-stagger is-visible">
+      <div class="gal-item" onclick="openLightbox('assets/images/house-tuscan-red-doors.jpg')"><img loading="lazy" width="960" height="720" src="assets/images/house-tuscan-red-doors.jpg" alt="Completed tuscan-style house with red doors and tiled roof"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/house-double-story.jpg')"><img loading="lazy" width="1032" height="774" src="assets/images/house-double-story.jpg" alt="Double-storey house under construction with balcony"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/house-gazebo.jpg')"><img loading="lazy" width="1080" height="1374" src="assets/images/house-gazebo.jpg" alt="Octagonal gazebo structure under construction"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/house-before-after.jpg')"><img loading="lazy" width="960" height="960" src="assets/images/house-before-after.jpg" alt="House renovation before and after"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/wardrobe-closet.jpg')"><img loading="lazy" width="885" height="1080" src="assets/images/wardrobe-closet.jpg" alt="Aluminium-framed glass sliding wardrobe with internal lighting"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/window-fivepanel.jpg')"><img loading="lazy" width="630" height="1400" src="assets/images/window-fivepanel.jpg" alt="Five panel folding window mid-installation"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/door-angular-glass.jpg')"><img loading="lazy" width="847" height="960" src="assets/images/door-angular-glass.jpg" alt="Double door with angular glass cut-outs"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/window-tinted-large.jpg')"><img loading="lazy" width="1008" height="756" src="assets/images/window-tinted-large.jpg" alt="Large tinted window in finished brick wall"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/door-reading-room.jpg')"><img loading="lazy" width="750" height="1000" src="assets/images/door-reading-room.jpg" alt="Stable-style aluminium door"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/window-corner-glass.jpg')"><img loading="lazy" width="474" height="482" src="assets/images/window-corner-glass.jpg" alt="Corner glass window box"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/door-textured-frosted.jpg')"><img loading="lazy" width="1050" height="1400" src="assets/images/door-textured-frosted.jpg" alt="Textured aluminium door with frosted glass strip"></div>
+      <div class="gal-item" onclick="openLightbox('assets/images/fabrication-glass.jpg')"><img loading="lazy" width="1078" height="873" src="assets/images/fabrication-glass.jpg" alt="Aluminium and glass panels laid out during fabrication"></div>
+    </div>
+  </div>
+</section>
+
+<section id="portals">
+  <div class="wrap">
+    <div class="portal-grid reveal-stagger">
+      <a class="portal p1" href="#products">
+        <div>
+          <div class="p-tag">Explore</div>
+          <h3>Products</h3>
+          <p>Windows, doors, sliding &amp; folding doors, burglar bars, expanders and custom aluminium work.</p>
+        </div>
+        <div class="p-arrow">→</div>
+      </a>
+      <a class="portal p2" href="#services">
+        <div>
+          <div class="p-tag">Explore</div>
+          <h3>Services</h3>
+          <p>Fabrication, glazing, renovations, installation, and full supply &amp; install packages.</p>
+        </div>
+        <div class="p-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid reveal-stagger">
+    <div class="about-copy">
+      <div class="eyebrow">About Marozva</div>
+      <h2>Established in 2019, built on doing the extra mile.</h2>
+      <p style="margin-top:18px;">Marozva Aluminium &amp; Projects is a Zimbabwean aluminium and construction solutions company. We manufacture, source, fabricate, supply and install aluminium products — and we go the extra mile to make sure every customer is satisfied with both the quality of the work and the service around it.</p>
+      <p>We serve homeowners, businesses, contractors and property developers who want aluminium work done properly the first time.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">2019</div><div class="label">Established</div></div>
+      <div class="stat"><div class="num">~20</div><div class="label">Team members</div></div>
+      <div class="stat"><div class="num">6</div><div class="label">Areas served</div></div>
+      <div class="stat"><div class="num">In-house</div><div class="label">Manufacturing</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Products</div>
+      <h2>What we fabricate</h2>
+      <p>Manufactured in-house, with materials sourced where needed to match the job.</p>
+    </div>
+    <div class="plain-list reveal-stagger">
+      <div class="item-row" onclick="openServiceModal('windows')"><span>Aluminium windows</span><span class="right"><span class="arrow">View photos →</span><span class="n">01</span></span></div>
+      <div class="item-row" onclick="openServiceModal('doors')"><span>Aluminium doors</span><span class="right"><span class="arrow">View photos →</span><span class="n">02</span></span></div>
+      <div class="item-row" onclick="openServiceModal('sliding')"><span>Sliding doors</span><span class="right"><span class="arrow">View photos →</span><span class="n">03</span></span></div>
+      <div class="item-row" onclick="openServiceModal('folding')"><span>Folding doors</span><span class="right"><span class="arrow">View photos →</span><span class="n">04</span></span></div>
+      <div class="item-row" onclick="openServiceModal('burglarbars')"><span>Burglar bars</span><span class="right"><span class="arrow">View photos →</span><span class="n">05</span></span></div>
+      <div class="item-row" onclick="openServiceModal('expanders')"><span>Expanders</span><span class="right"><span class="arrow">View photos →</span><span class="n">06</span></span></div>
+      <div class="item-row" onclick="openServiceModal('custom')"><span>Custom aluminium products</span><span class="right"><span class="arrow">View photos →</span><span class="n">07</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Services</div>
+      <h2>What we offer</h2>
+      <p>From first measurement to final finish — aluminium and construction work, handled by our own team.</p>
+    </div>
+    <div class="plain-list reveal-stagger">
+      <div class="item-row" onclick="openServiceModal('fabrication')"><span>Aluminium fabrication</span><span class="right"><span class="arrow">View photos →</span><span class="n">01</span></span></div>
+      <div class="item-row" onclick="openServiceModal('glazing')"><span>Glazing</span><span class="right"><span class="arrow">View photos →</span><span class="n">02</span></span></div>
+      <div class="item-row" onclick="openServiceModal('renovations')"><span>Renovations</span><span class="right"><span class="arrow">View photos →</span><span class="n">03</span></span></div>
+      <div class="item-row" onclick="openServiceModal('installation')"><span>Aluminium product installation</span><span class="right"><span class="arrow">View photos →</span><span class="n">04</span></span></div>
+      <div class="item-row" onclick="openServiceModal('customwork')"><span>Custom aluminium work</span><span class="right"><span class="arrow">View photos →</span><span class="n">05</span></span></div>
+      <div class="item-row" onclick="openServiceModal('supply')"><span>Supply &amp; installation</span><span class="right"><span class="arrow">View photos →</span><span class="n">06</span></span></div>
+      <div class="item-row" onclick="openServiceModal('construction')"><span>Construction</span><span class="right"><span class="arrow">View photos →</span><span class="n">07</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why Marozva</div>
+      <h2>What makes us different</h2>
+    </div>
+    <div class="why-list reveal-stagger">
+      <div class="why-item"><div class="wn">01</div><div><h3>Quality workmanship</h3><p>Fabricated and installed by our own team, to a standard we put our name on.</p></div></div>
+      <div class="why-item"><div class="wn">02</div><div><h3>Customer-focused service</h3><p>Reachable on call and WhatsApp before, during and after the job.</p></div></div>
+      <div class="why-item"><div class="wn">03</div><div><h3>Custom solutions</h3><p>Non-standard sizes, finishes and designs, fabricated to fit your space.</p></div></div>
+      <div class="why-item"><div class="wn">04</div><div><h3>Reliable installation</h3><p>Scheduled and finished properly, without cutting corners.</p></div></div>
+      <div class="why-item"><div class="wn">05</div><div><h3>Attention to detail</h3><p>From the seal on a window to the swing of a door — checked.</p></div></div>
+      <div class="why-item"><div class="wn">06</div><div><h3>In-house manufacturing</h3><p>We manufacture our own products and source materials when needed.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How it works</div>
+      <h2>Our process</h2>
+    </div>
+    <div class="process-row reveal-stagger">
+      <div class="process-step"><div class="pn">01</div><h3>Get in touch</h3><p>Call or WhatsApp us with what you need.</p></div>
+      <div class="process-step"><div class="pn">02</div><h3>Site visit</h3><p>We measure the space before anything is fabricated.</p></div>
+      <div class="process-step"><div class="pn">03</div><h3>Fabrication</h3><p>Cut, fitted and assembled to spec, in-house.</p></div>
+      <div class="process-step"><div class="pn">04</div><h3>Installation</h3><p>Installed, finished, and checked on site.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Where we work</div>
+      <h2>Areas we currently serve</h2>
+    </div>
+    <div class="areas-row">
+      <span class="area-pill">Harare</span>
+      <span class="area-pill">Chivhu</span>
+      <span class="area-pill">Hatcliff</span>
+      <span class="area-pill">Wedza</span>
+      <span class="area-pill">Nyika</span>
+      <span class="area-pill">Birchnough Bridge</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's talk about your project</h2>
+      <p>Reach out on WhatsApp or call directly — both numbers are on WhatsApp.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-block"><div class="k">Phone &amp; WhatsApp</div><div class="v">0782 616 819</div><div class="v">0716 587 638</div></div>
+        <div class="contact-block"><div class="k">Email</div><div class="v">muchengashepherd@gmail.com</div></div>
+        <div class="contact-block"><div class="k">Business hours</div><div class="v">07:00 – 18:00</div></div>
+        <div class="contact-block"><div class="k">Serving</div><div class="v">Harare, Chivhu, Hatcliff, Wedza, Nyika, Birchnough Bridge</div></div>
+      </div>
+      <div class="contact-ctas">
+        <a class="btn btn-primary" href="https://wa.me/263782616819" target="_blank" rel="noopener">Message us on WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+263782616819">Call 0782 616 819</a>
+        <a class="btn btn-outline" href="mailto:muchengashepherd@gmail.com">Email us</a>
+      </div>
+    </div>
+
+    <div class="quote-form">
+      <div class="k">Or send us the details directly</div>
+      <form id="quote-form" onsubmit="return submitQuoteForm(event)">
+        <div class="qf-row">
+          <input type="text" id="qf-name" placeholder="Your name" required>
+          <input type="tel" id="qf-phone" placeholder="Your phone number" required>
+        </div>
+        <textarea id="qf-message" placeholder="What do you need? e.g. 3 windows for a bedroom extension" required></textarea>
+        <button type="submit" class="btn btn-primary">Send via WhatsApp →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-row">
+    <div class="foot-brand">
+      <span class="logo-mark" style="width:24px;height:24px;">
+        <svg viewBox="0 0 34 34"><rect x="9" y="8" width="6" height="18" fill="#F7F8F8"/><rect x="9" y="8" width="18" height="6" fill="#F7F8F8"/><line x1="9" y1="8" x2="15" y2="14" stroke="#0C4A78" stroke-width="1.6"/></svg>
+      </span>
+      MAROZVA ALUMINIUM &amp; PROJECTS
+    </div>
+    <div class="foot-icons">
+      <a href="https://wa.me/263782616819" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3z" fill="currentColor"/></svg>
+      </a>
+      <a href="tel:+263782616819" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" fill="currentColor"/></svg>
+      </a>
+      <a href="mailto:muchengashepherd@gmail.com" aria-label="Email us">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 5h18v14H3V5z" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+      </a>
+    </div>
+    <div>© 2026 Marozva Aluminium &amp; Projects. Built to fit. Made to last.</div>
+  </div>
+</footer>
+
+<div id="lightbox" onclick="closeLightbox(event)">
+  <button id="lightbox-close" aria-label="Close" onclick="closeLightbox(event)">✕</button>
+  <img id="lightbox-img" src="" alt="Enlarged project photo">
+</div>
+
+<div id="service-modal" onclick="closeServiceModal(event)">
+  <div class="sm-card">
+    <div class="sm-topbar"></div>
+    <button class="sm-close" aria-label="Close" onclick="closeServiceModal(event)">✕</button>
+    <div class="sm-body">
+      <div class="sm-head">
+        <span class="sm-mark"><svg viewBox="0 0 38 38"><rect x="10" y="8" width="7" height="22" fill="#F4F5F6"/><rect x="10" y="8" width="22" height="7" fill="#F4F5F6"/><line x1="10" y1="8" x2="17" y2="15" stroke="#0C4A78" stroke-width="1.6"/></svg></span>
+        <div>
+          <div class="sm-eyebrow">Marozva Aluminium &amp; Projects</div>
+          <div class="sm-count" id="sm-count"></div>
+        </div>
+      </div>
+      <h3 id="sm-title"></h3>
+      <p class="sm-desc" id="sm-desc" style="display:none;"></p>
+      <div class="sm-grid" id="sm-images"></div>
+      <div class="sm-empty" id="sm-empty" style="display:none;">
+        <div class="sm-empty-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13.5" r="3.2" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <p>We don't have dedicated photos of this one online yet. Message us on WhatsApp and we'll send real examples directly.</p>
+      </div>
+      <a class="sm-cta" id="sm-cta" href="https://wa.me/263782616819" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3z" fill="#fff"/><path d="M22.4 18.6c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2s-.9 1.1-1.1 1.3-.4.2-.8.1a9 9 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5.3-.4c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.6.8.3 1.4.5 1.8.6.8.2 1.4.2 2 .1.6-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.4z" fill="#0C4A78"/></svg>
+        <span id="sm-cta-text">Ask about this on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<a id="wa-float" href="https://wa.me/263782616819" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none"><path d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3z" fill="#fff"/><path d="M22.4 18.6c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2s-.9 1.1-1.1 1.3-.4.2-.8.1a9 9 0 0 1-2.6-1.6 9.6 9.6 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.4-.5.3-.4c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.2 3.4 5.4 4.6.8.3 1.4.5 1.8.6.8.2 1.4.2 2 .1.6-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.4z" fill="#0C4A78"/></svg>
+</a>
+
+<script>
+  // product & service photo popovers
+  var serviceImages = {
+    windows: {title:'Aluminium windows', desc:'Custom-sized aluminium window frames, fitted to your opening and finish of choice.', images:['assets/images/window-fivepanel.jpg','assets/images/window-tinted-large.jpg','assets/images/window-corner-glass.jpg']},
+    doors: {title:'Aluminium doors', desc:'Single and double aluminium doors, built to match your entrance.', images:['assets/images/door-reading-room.jpg','assets/images/door-textured-frosted.jpg']},
+    sliding: {title:'Sliding doors', desc:'Smooth-running sliding doors for patios, balconies and room dividers.', images:['assets/images/wardrobe-closet.jpg']},
+    folding: {title:'Folding doors', desc:'Multi-panel folding doors that open a wall\'s width when you need it.', images:['assets/images/window-fivepanel.jpg']},
+    burglarbars: {title:'Burglar bars', desc:'Security bars fitted to windows and doors without blocking the view.', images:[]},
+    expanders: {title:'Expanders', desc:'Expandable security gates for doors, corridors and openings.', images:[]},
+    custom: {title:'Custom aluminium products', desc:'Anything outside the standard list, fabricated to your exact spec.', images:['assets/images/door-angular-glass.jpg','assets/images/wardrobe-closet.jpg']},
+    fabrication: {title:'Aluminium fabrication', desc:'Cut, welded and finished in-house, to your measurements.', images:['assets/images/fabrication-glass.jpg']},
+    glazing: {title:'Glazing', desc:'Glass fitted and sealed into aluminium frames, from single panes to full walls.', images:['assets/images/window-corner-glass.jpg','assets/images/window-tinted-large.jpg']},
+    renovations: {title:'Renovations', desc:'Upgrading existing windows, doors and frames as part of a wider renovation.', images:[]},
+    installation: {title:'Aluminium product installation', desc:'On-site installation and finishing for anything we fabricate.', images:['assets/images/window-fivepanel.jpg','assets/images/door-reading-room.jpg']},
+    customwork: {title:'Custom aluminium work', desc:'One-off aluminium work built around a specific brief.', images:['assets/images/wardrobe-closet.jpg','assets/images/door-angular-glass.jpg']},
+    supply: {title:'Supply &amp; installation', desc:'Materials sourced, fabricated and installed as one package.', images:['assets/images/fabrication-glass.jpg','assets/images/door-textured-frosted.jpg']},
+    construction: {title:'Construction', desc:'Full builds and renovations — from ground-up construction to home upgrades and additions.', images:['assets/images/house-tuscan-red-doors.jpg','assets/images/house-before-after.jpg','assets/images/house-double-story.jpg','assets/images/house-gazebo.jpg']}
+  };
+  function openServiceModal(key){
+    var data = serviceImages[key];
+    if(!data) return;
+    document.getElementById('sm-title').innerHTML = data.title;
+    var descEl = document.getElementById('sm-desc');
+    if(data.desc){ descEl.textContent = data.desc; descEl.style.display = 'block'; }
+    else { descEl.style.display = 'none'; }
+    var grid = document.getElementById('sm-images');
+    var empty = document.getElementById('sm-empty');
+    var count = document.getElementById('sm-count');
+    grid.innerHTML = '';
+    if(data.images.length){
+      grid.style.display = 'grid';
+      empty.style.display = 'none';
+      count.textContent = data.images.length + (data.images.length === 1 ? ' photo' : ' photos');
+      data.images.forEach(function(src){
+        var wrap = document.createElement('div');
+        wrap.className = 'sm-thumb';
+        var img = document.createElement('img');
+        img.src = src;
+        img.loading = 'lazy';
+        img.alt = data.title;
+        wrap.appendChild(img);
+        grid.appendChild(wrap);
+      });
+    } else {
+      grid.style.display = 'none';
+      empty.style.display = 'flex';
+      count.textContent = 'No photos yet';
+    }
+    var plainTitle = data.title.replace(/&amp;/g, '&');
+    document.getElementById('sm-cta-text').textContent = data.images.length
+      ? 'Ask about ' + plainTitle + ' on WhatsApp'
+      : 'Ask about this on WhatsApp';
+    document.getElementById('sm-cta').href = 'https://wa.me/263782616819?text=' + encodeURIComponent('Hi, I\'d like to ask about ' + plainTitle);
+    document.getElementById('service-modal').classList.add('open');
+  }
+  function closeServiceModal(e){
+    if(e.target.id === 'service-modal' || e.target.classList.contains('sm-close') || e.target.closest('.sm-close')){
+      document.getElementById('service-modal').classList.remove('open');
+    }
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') document.getElementById('service-modal').classList.remove('open');
+  });
+
+  // quote form -> pre-filled WhatsApp message
+  function submitQuoteForm(e){
+    e.preventDefault();
+    var name = document.getElementById('qf-name').value.trim();
+    var phone = document.getElementById('qf-phone').value.trim();
+    var message = document.getElementById('qf-message').value.trim();
+    var text = 'Hi, my name is ' + name + ' (' + phone + '). ' + message;
+    window.open('https://wa.me/263782616819?text=' + encodeURIComponent(text), '_blank');
+    return false;
+  }
+
+  // gallery lightbox
+  function openLightbox(src){
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+  }
+  function closeLightbox(e){
+    if(e.target.id === 'lightbox' || e.target.id === 'lightbox-close'){
+      document.getElementById('lightbox').classList.remove('open');
+    }
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') document.getElementById('lightbox').classList.remove('open');
+  });
+
+  // scroll reveal
+  var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.15});
+  revealEls.forEach(function(el){ io.observe(el); });
+
+  // active nav highlight
+  var navLinks = document.querySelectorAll('nav.links a[href^="#"]');
+  var sections = Array.from(navLinks).map(function(a){
+    return document.querySelector(a.getAttribute('href'));
+  }).filter(Boolean);
+  var navIo = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      var id = '#' + entry.target.id;
+      var link = document.querySelector('nav.links a[href="' + id + '"]');
+      if(!link) return;
+      if(entry.isIntersecting){
+        navLinks.forEach(function(l){ l.classList.remove('active'); });
+        link.classList.add('active');
+      }
+    });
+  }, {rootMargin: '-45% 0px -50% 0px'});
+  sections.forEach(function(s){ navIo.observe(s); });
+</script>
+
+</body>
+</html>
